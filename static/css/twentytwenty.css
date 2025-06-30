@@ -118,11 +118,22 @@
     -ms-user-select: none;
 }
 
-.twentytwenty-container img {
-    max-width: 100% !important;
+.twentytwenty-container .img {
+    display: block;
+    max-width: 100%;
+}
+
+.twentytwenty-container .img.twentytwenty-before {
     position: absolute;
     top: 0;
-    display: block;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.twentytwenty-container img {
+    width: 100%;
+    max-width: 100%;
 }
 
 .twentytwenty-container.active .twentytwenty-overlay,
