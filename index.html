@@ -241,23 +241,45 @@
 
     <section class="hero">
         <div class="hero-body-subtitle" style="display: block;">
-            <div class="columns is-centered has-text-centered">
+            <div class="columns is-centered has-text-centered" style="margin-bottom: 0px;">
                 <div class="container is-max-maxwidth">
-                    <div class="title sansfont mode-font" style="font-family:'Acme';color:#595959;margin-top: 10px;">
+                    <div class="title sansfont mode-font" style="font-family:'Acme';color:#595959;margin-top: 10px;margin-bottom: 10px;">
                         <!-- Basic Mode -->
                         Gallery
                     </div>
+                    <span>(Please refresh the page if not display normally.)</span>
                     <!-- <div class="note-font" style="margin-top: -10pt; font-style: italic;">
                         *with a static panorama, we show the rendered perspective videos at llff trajectory.
                     </div> -->
                 </div>
             </div>
-
+            <div class="container">
+                <div id="results-carousel" class="carousel results-carousel">
+                    <div class="item">
+                        <div class="twentytwenty-container" data-orientation="horizontal" style="max-width: 1200px; margin: 20px auto;">
+                            <img src="vis/Natural/0003_input_upscaled.jpg" style="position: absolute;width: 1200px" />
+                            <img src="vis/Natural/0003_output.jpg" />
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="twentytwenty-container" data-orientation="horizontal" style="max-width: 1200px; margin: 20px auto;">
+                            <img src="vis/Natural/0008_input_upscaled.jpg" style="position: absolute;width: 1200px" />
+                            <img src="vis/Natural/0008_output.jpg" />
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="twentytwenty-container" data-orientation="horizontal" style="max-width: 1200px; margin: 20px auto;">
+                            <img src="vis/Natural/0010_input_upscaled.jpg" style="position: absolute;width: 1200px" />
+                            <img src="vis/Natural/0010_output.jpg" />
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
     <!-- Image carousel -->
-    <section class="hero is-small">
+    <!-- <section class="hero is-small">
         <div class="hero-body">
             <div class="container">
                 <div id="results-carousel" class="carousel results-carousel">
@@ -282,7 +304,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
     <!-- End image carousel -->
 
 
