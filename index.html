@@ -429,15 +429,15 @@
         function initTwentyTwentyWhenReady() {
             const containers = document.querySelectorAll('.twentytwenty-container');
             if (containers.length > 0) {
-                // 用 jQuery 初始化所有 twentytwenty 容器
+                // Function to wait until .twentytwenty-container elements are in the DOM
                 $(containers).twentytwenty();
             } else {
-                // 元素还没加载出来，继续等待
+                // Initialize the twentytwenty plugin using jQuery
                 setTimeout(initTwentyTwentyWhenReady, 200);
             }
         }
 
-        // 页面加载完后执行检测逻辑
+        // Wait until the full page (including images and carousel) is loaded
         window.addEventListener('load', function() {
             initTwentyTwentyWhenReady();
         });
