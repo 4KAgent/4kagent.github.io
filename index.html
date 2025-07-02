@@ -418,10 +418,28 @@
     <script src="static/js/bulma-carousel.min.js"></script>
     <script src="static/js/jquery.event.move.js"></script>
     <script src="static/js/jquery.twentytwenty.js"></script> -->
-    <script>
+    <!-- <script>
         $(function() {
             $(".twentytwenty-container").twentytwenty();
             // $(".twentytwenty-container", "#results-carousel").twentytwenty({default_offset_pct: 0.5, ratio: 0.5});
+        });
+    </script> -->
+
+    <script>
+        function initTwentyTwentyWhenReady() {
+            const containers = document.querySelectorAll('.twentytwenty-container');
+            if (containers.length > 0) {
+                // 用 jQuery 初始化所有 twentytwenty 容器
+                $(containers).twentytwenty();
+            } else {
+                // 元素还没加载出来，继续等待
+                setTimeout(initTwentyTwentyWhenReady, 200);
+            }
+        }
+
+        // 页面加载完后执行检测逻辑
+        window.addEventListener('load', function() {
+            initTwentyTwentyWhenReady();
         });
     </script>
 
