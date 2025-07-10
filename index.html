@@ -136,7 +136,7 @@
                             <span class="author-block">&nbsp;&nbsp;</span>
                             <span class="author-block"><sup>5</sup>UT Austin </span>
                             <span class="author-block">&nbsp;&nbsp;</span>
-                            <span class="author-block"><sup>6</sup>Caltech </span>
+                            <span class="author-block"><sup>6</sup>California Institute of Technology </span>
                             <span class="author-block">&nbsp;&nbsp;</span>
                             <span class="author-block"><sup>7</sup>Topaz Labs </span>
                             <span class="author-block">&nbsp;&nbsp;</span>
@@ -150,12 +150,12 @@
                             <div class="publication-links">
                                 <!-- Arxiv PDF link -->
                                 <span class="link-block">
-                        <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
+                        <a href="https://arxiv.org/pdf/2507.07105" target="_blank"
                         class="external-link button is-normal is-rounded is-dark">
                         <span class="icon">
                           <i class="fas fa-file-pdf"></i>
                         </span>
-                                <span>Paper (Coming Soon)</span>
+                                <span>Paper</span>
                                 </a>
                                 </span>
 
@@ -172,7 +172,7 @@
 
                                 <!-- Github link -->
                                 <span class="link-block">
-                    <a href="https://github.com/YOUR REPO HERE" target="_blank"
+                    <a href="https://github.com/taco-group/4KAgent" target="_blank"
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="fab fa-github"></i>
@@ -204,11 +204,10 @@
     <section class="hero teaser">
         <div class="container is-max-desktop">
             <div class="hero-body">
-                <img width="100%" src="vis/4KAgent_Teaser_v6.jpg" loading="lazy" alt="Image">
-                <h2 class="subtitle has-text-centered">
-                    We present <strong>4KAgent</strong>, an agentic image super-resolution generalist designed to universally upscale any image to <strong>4K resolution</strong>, regardless of input type, degradation level, or domain. That is, 4KAgent
-                    effectively restores diverse imagery, spanning from natural scenes, severely degraded captures, human/pet portraits, AI-generated content (AIGC), as well as specialized scientific imaging domains, such as remote sensing, fluorescence
-                    microscopy, pathology, and medical modalities like X-ray, ultrasound, and funduscopy --- all <strong>without the need</strong> for any re-training or domain-specific adaptation.
+                <img width="100%" src="vis/4KAgent_Teaser.jpg" loading="lazy" alt="Image">
+                <h2 class="subtitle" style="font-size: 19px;">
+                    We present <strong>4KAgent</strong>, an agentic image super-resolution generalist designed to universally upscale <strong>any image to 4K resolution</strong>, regardless of input type, degradation level, or domain. That is, <strong>4KAgent</strong>                    effectively restores diverse imagery, spanning from natural scenes, severely degraded captures (e.g., old photos), human/pet portraits, AI-generated content (AIGC), as well as specialized scientific imaging domains, such as remote
+                    sensing, fluorescence microscopy, pathology, and various medical modalities like X-ray, ultrasound, and funduscopy --- all <strong>without the need</strong> for any re-training or domain-specific adaptation.
                 </h2>
             </div>
         </div>
@@ -348,6 +347,87 @@
                     </div>
                 </div>
             </div>
+            <div class="title sansfont long-font has-text-centered" style="font-family:'Acme';color:#595959;margin-top: 50px;margin-bottom: 0px;">
+                <!-- Basic Mode -->
+                Scientific Imagery
+            </div>
+            <div class="container">
+                <div id="results-carousel" class="carousel results-carousel">
+                    <div class="item">
+                        <div class="twentytwenty-container" data-orientation="horizontal" style="max-width: 1200px; margin: 20px auto;">
+                            <img src="vis/Geo/P0021_input_upscale_crop.jpg" style="position: absolute;width: 1200px" />
+                            <img src="vis/Geo/15_P0021_crop.jpg" />
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="twentytwenty-container" data-orientation="horizontal" style="max-width: 1200px; margin: 20px auto;">
+                            <img src="vis/Geo/P0158_input_upscale_crop.jpg" style="position: absolute;width: 1200px" />
+                            <img src="vis/Geo/15_P0158_crop.jpg" />
+                        </div>
+                    </div>
+                    <!-- <div class="item">
+                        <div class="twentytwenty-container" data-orientation="horizontal" style="max-width: 800px; margin: 20px auto;">
+                            <img src="vis/Med/46_input_resized.jpg" style="position: absolute;width: 800px" />
+                            <img src="vis/Med/46_result.jpg" />
+                        </div>
+                    </div> -->
+                    <div class="item">
+                        <div class="twentytwenty-container" data-orientation="horizontal" style="max-width: 800px; margin: 20px auto;">
+                            <img src="vis/Med/18_input_resized.jpg" style="position: absolute;width: 800px" />
+                            <img src="vis/Med/18_result.jpg" />
+                        </div>
+                    </div>
+                    <!-- <div class="item">
+                        <div class="twentytwenty-container" data-orientation="horizontal" style="max-width: 800px; margin: 20px auto;">
+                            <img src="vis/Med/22_input_resized.jpg" style="position: absolute;width: 800px" />
+                            <img src="vis/Med/22_result.jpg" />
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="twentytwenty-container" data-orientation="horizontal" style="max-width: 800px; margin: 20px auto;">
+                            <img src="vis/Med/35_input_resized.jpg" style="position: absolute;width: 800px" />
+                            <img src="vis/Med/35_result.jpg" />
+                        </div>
+                    </div> -->
+                    <div class="item">
+                        <div class="twentytwenty-container" data-orientation="horizontal" style="max-width: 800px; margin: 20px auto;">
+                            <img src="vis/Med/2_input_resized.jpg" style="position: absolute;width: 800px" />
+                            <img src="vis/Med/2_result.jpg" />
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="twentytwenty-container" data-orientation="horizontal" style="max-width: 1200px; margin: 20px auto;">
+                            <img src="vis/Med/39_input_resized.jpg" style="position: absolute;width: 1200px" />
+                            <img src="vis/Med/39_result.jpg" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="title sansfont long-font has-text-centered" style="font-family:'Acme';color:#595959;margin-top: 50px;margin-bottom: 0px;">
+                Scientific Imagery II
+            </div>
+            <div class="container">
+                <div id="results-carousel" class="carousel results-carousel">
+                    <div class="item">
+                        <div class="twentytwenty-container" data-orientation="horizontal" style="max-width: 800px; margin: 20px auto;">
+                            <img src="vis/Med/46_input_resized.jpg" style="position: absolute;width: 800px" />
+                            <img src="vis/Med/46_result.jpg" />
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="twentytwenty-container" data-orientation="horizontal" style="max-width: 800px; margin: 20px auto;">
+                            <img src="vis/Med/22_input_resized.jpg" style="position: absolute;width: 800px" />
+                            <img src="vis/Med/22_result.jpg" />
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="twentytwenty-container" data-orientation="horizontal" style="max-width: 1200px; margin: 20px auto;">
+                            <img src="vis/Med/35_input_resized.jpg" style="position: absolute;width: 1200px" />
+                            <img src="vis/Med/35_result.jpg" />
+                        </div>
+                    </div>
+                </div>
+            </div> -->
         </div>
     </section>
 
@@ -453,12 +533,21 @@
 
 
     <!--BibTex citation -->
-    <!-- <section class="section" id="BibTeX">
+    <section class="section" id="BibTeX">
         <div class="container is-max-desktop content">
             <h2 class="title">BibTeX</h2>
-            <pre><code>BibTex Code Here</code></pre>
+            <pre><code>@misc{zuo20254kagentagenticimage4k,
+      title={4KAgent: Agentic Any Image to 4K Super-Resolution}, 
+      author={Yushen Zuo and Qi Zheng and Mingyang Wu and Xinrui Jiang and Renjie Li and Jian Wang and Yide Zhang and Gengchen Mai and Lihong V. Wang and James Zou and Xiaoyu Wang and Ming-Hsuan Yang and Zhengzhong Tu},
+      year={2025},
+      eprint={2507.07105},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2507.07105}, 
+}
+            </code></pre>
         </div>
-    </section> -->
+    </section>
     <!--End BibTex citation -->
 
 
